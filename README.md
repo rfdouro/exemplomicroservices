@@ -1,7 +1,7 @@
 # Exemplo de Microserviço
 Exemplo de microserviços com `SpringBoot`
 
-Serviço de estudantes com acesso a serviços de livros
+&rarr; Serviço de estudantes com acesso a serviços de livros
 
 Adaptado do artigo [How to Implement Feign Client in Spring Boot Microservices?](https://javatechonline.com/how-to-implement-feign-client-in-spring-boot-microservices/)
 
