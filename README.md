@@ -9,3 +9,4 @@ Adaptado do artigo [How to Implement Feign Client in Spring Boot Microservices?]
 * [A Guide to Spring Boot Admin](https://www.baeldung.com/spring-boot-admin)
 * [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
 * [Feign simplifies the process of writing Java HTTP clients](https://github.com/OpenFeign/feign)
+* [Swagger UI configuration for API-Gateway in Spring Boot](https://medium.com/@agayevilkin76/api-gateway-swagger-ui-config-for-spring-boot-6d51a0294a34)
