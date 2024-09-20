@@ -1,0 +1,30 @@
+spring:
+ application:
+  name: eurekaserver
+ boot:
+  admin:
+   context-path: /admin
+
+server:
+ port: 8761
+
+eureka:
+ client:
+  register-with-eureka: false
+  fetch-registry: false
+
+
+
+springdoc:
+ api-docs:
+  enabled: true
+ swagger-ui:
+  enabled: true
+  path: /swagger-ui.html
+  config-url: /v3/api-docs/swagger-config
+  urls:
+   - url: http://host.docker.internal:9000/v3/api-docs
+     name: Livro Service
+   - url: http://host.docker.internal:9100/v3/api-docs
+     name: Estudante Service
+
