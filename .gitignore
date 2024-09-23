@@ -33,3 +33,5 @@ build/
 .vscode/
 
 gitpush.bat
+node_modules
+/agendaservice/nbproject/private/

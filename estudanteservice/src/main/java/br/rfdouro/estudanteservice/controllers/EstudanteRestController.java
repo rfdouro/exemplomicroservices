@@ -1,6 +1,8 @@
 package br.rfdouro.estudanteservice.controllers;
 
+import br.rfdouro.estudanteservice.models.AgendaResponse;
 import br.rfdouro.estudanteservice.models.Livro;
+import br.rfdouro.estudanteservice.services.AgendaServiceConsumer;
 import br.rfdouro.estudanteservice.services.LivroRestConsumer;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,10 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/estudante")
-public class EstudanteRestConstroller {
+public class EstudanteRestController {
 
  @Autowired
  private LivroRestConsumer consumer;
+ @Autowired
+ private AgendaServiceConsumer agendaConsumer;
 
  @GetMapping("/data")
  public String getStudentInfo() {
@@ -53,5 +57,15 @@ public class EstudanteRestConstroller {
  @PostMapping("/entityData")
  public Livro addEntityData(Livro ivro) {
   return consumer.adicionaLivro(ivro);
+ }
+
+ @GetMapping("/agendas")
+ public List<AgendaResponse> getDataAgenda() {
+  return agendaConsumer.getAgendas();
+ }
+ 
+ @PostMapping("/agendas")
+ public Object getDataAgenda(AgendaResponse  agenda) {
+  return agendaConsumer.addAgenda(agenda);
  }
 }
